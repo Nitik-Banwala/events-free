@@ -51,7 +51,7 @@ export const Addcomment = () => {
         <div className="w-full mt-12 max-w-330">
             <div className=" p-6">
                 <div className="flex gap-3 rounded-4xl border mb-8 border-[#9CA1BE]  p-2 shadow-sm">
-                    <img src="P2section4img.png" alt="" className="absolute -mt-0.75 -ml-0.75" />
+                    <img src="/png/P2section4img.png" alt="" className="absolute -mt-0.75 -ml-0.75" />
                     <input
                         type="text"
                         value={input}
@@ -69,7 +69,7 @@ export const Addcomment = () => {
                 <ul className="space-y-3  mb-6 ">
                     {tasks.map((task, index) => (
                         <div className="mt-10">
-                            <img src="/P2section4img.png" alt="" className=" absolute  " />
+                            <img src="/png/P2section4img.png" alt="" className=" absolute  " />
                             <li
                                 key={index}
                                 className="flex ml-17 justify-between max-w-310 flex-col  items-start  p-3   rounded-b-[20px] rounded-r-[20px] bg-[#F1F2F5]">
