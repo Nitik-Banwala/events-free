@@ -3,7 +3,7 @@ import React from "react";
 const Section4 = () => {
     return (
         <section className="w-full py-16  px-4 font-[Poppins,sans-serif]">
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-14 items-start">
+            <div className="max-w-330 mx-auto flex flex-col lg:flex-row gap-14 items-start">
                 <div className="">
                     <div className="flex w-48 mb-4">
                         <div className="h-2 bg-[#2C49FE] w-3/4"></div>
@@ -23,7 +23,7 @@ const Section4 = () => {
                 </div>
                 <div className=" flex flex-row gap-10 max-[568px]:flex-col  ">
                     <div className="bg-white max-w-85 cursor-pointer  overflow-hidden shadow-md hover:shadow-2xl transition duration-300">
-                        <img src="/section4img1.png" alt="" className="p-3" />
+                        <img src="/png/section4img1.png" alt="" className="p-3" />
                         <div className="p-4">
                             <p className="text-sm text-gray-500 mb-1">09/23/2026</p>
                             <h3 className="text-xl font-semibold mb-2">
@@ -36,7 +36,7 @@ const Section4 = () => {
                         </div>
                     </div>
                     <div className="bg-white max-w-85 cursor-pointer overflow-hidden shadow-md hover:shadow-2xl transition duration-300">
-                        <img src="/section4img2.png" alt="" className=" p-3" />
+                        <img src="/png/section4img2.png" alt="" className=" p-3" />
                         <div className="p-4">
                             <p className="text-sm text-gray-500 mb-1">09/23/2026</p>
                             <h3 className="text-xl font-semibold mb-2">

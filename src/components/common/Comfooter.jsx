@@ -3,13 +3,13 @@ import React from "react";
 const Comfooter = () => {
     return (
         <footer className="bg-black text-white pt-16">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="max-w-330 mx-auto px-4">
 
                 <div className="flex flex-col min-[980px]:flex-row justify-between gap-12">
 
                     <div className="max-w-sm">
                         <div className="flex items-center gap-3 mb-6">
-                            <img src="/logo.png" alt="logo" className="w-14" />
+                            <img src="/png/logo.png" alt="logo" className="w-14" />
                             <h1 className="text-2xl font-bold">
                                 <span className="text-[#2C49FE]">Events</span>
                                 <span className="text-[#1A9FFF]">Free</span>
@@ -68,11 +68,11 @@ const Comfooter = () => {
                             <h2 className="font-semibold text-lg mb-4 hover:scale-[1.1] transition-transform duration-200">GALLERY</h2>
 
                             <div className="grid grid-cols-3 gap-3 max-w-70">
-                                <img src="/footerimg1.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
-                                <img src="/footerimg2.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
-                                <img src="/footerimg3.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
-                                <img src="/footerimg4.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
-                                <img src="/footerimg5.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
+                                <img src="/png/footerimg1.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
+                                <img src="/png/footerimg2.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
+                                <img src="/png/footerimg3.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
+                                <img src="/png/footerimg4.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
+                                <img src="/png/footerimg5.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
                                 <div className="bg-[#2D3CAE] flex items-center justify-center text-sm font-medium cursor-pointer">
                                     Show <br /> More
                                 </div>

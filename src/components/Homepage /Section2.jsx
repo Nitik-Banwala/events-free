@@ -2,7 +2,7 @@ import React from 'react'
 import Video from './Video'
 const Section2 = () => {
     return (
-        <div className="max-w-310 mx-auto px-4 py-16 font-[Poppins,sans-serif] ">
+        <div className="max-w-330 mx-auto px-4 py-16 font-[Poppins,sans-serif] ">
             <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="max-w-full lg:w-1/2 flex justify-center relative">
                     <Video />

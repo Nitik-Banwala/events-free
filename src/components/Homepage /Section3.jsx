@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section3 = () => {
     return (
-        <div className="relative min-h-127 bg-[url(/section-3-img.png)] bg-cover bg-center">
+        <div className="relative min-h-127 bg-[url(/png/section-3-img.png)] bg-cover bg-center">
             <div className="absolute inset-0 bg-[#2C49FECC]"></div>
             <div className="relative z-10 px-4 sm:px-6 lg:px-0">
                 <h1 className='text-center pt-15 font-bold text-3xl sm:text-4xl lg:text-5xl font-["Poppins",sans-serif] text-white'>

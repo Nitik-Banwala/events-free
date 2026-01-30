@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../Commancomponents/Button";
+import Button from "../common/Button";
 import Input from "./Input";
 
 const Section5 = () => {
@@ -44,7 +44,7 @@ const Section5 = () => {
         if (!passwordRegex.test(formData.password)) {
             newErrors.password = "1 capital & 1 symbol required";
         }
-
+       
         if (formData.confirmPassword !== formData.password) {
             newErrors.confirmPassword = "Passwords do not match";
         }
@@ -57,11 +57,11 @@ const Section5 = () => {
     };
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row items-center gap-20">
+        <div className="max-w-330 mx-auto px-4 py-16 flex flex-col lg:flex-row items-center gap-20">
 
             <div className="w-full lg:w-1/2 flex justify-center">
                 <img
-                    src="/section5img.png"
+                    src="/png/section5img.png"
                     alt="Join Us"
                     className="max-w-full h-auto"
                 />

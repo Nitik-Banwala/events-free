@@ -1,9 +1,9 @@
 import React from 'react'
-import Button from '../Commancomponents/Button'
+import Button from '../common/Button'
 
 const Footer = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-330 mx-auto'>
             <div className='bg-[#2C49FEBD] max-w-240.5  mx-4 mt-40.25 items-center   p-4 min-[701px]:flex max-[420px]:flex-col max-[420px]:flex max-[420px]:w-fit
     min-[701px]:flex-row min-[701px]:justify-between min-[701px]:rounded-[150px] max-[700px]:grid max-[700px]:grid-cols-2 max-[700px]:grid-rows-2 max-[700px]:gap-4 max-[700px]:rounded-4xl'>
                 <div className='flex flex-row items-center gap-4 ml-4 '>

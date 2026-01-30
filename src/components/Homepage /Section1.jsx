@@ -1,15 +1,15 @@
 import React from 'react'
-import Button from '../Commancomponents/Button'
-import Footer from './Footer'
+import Button from '../common/Button'
+import Footer from '../Homepage /Footer'
 
 
 const Section1 = () => {
   return (
       <div>     
           <div className="w-full">
-              <div className="min-h-screen bg-[url('/background.png')] bg-cover bg-center">
+              <div className="min-h-screen bg-[url('/png/background.png')] bg-cover bg-center">
                   <div className="min-h-screen bg-black/60">
-                      <div className="max-w-7xl mx-auto px-6 pt-32 md:pt-40">
+                      <div className="max-w-330 mx-auto px-6 pt-32 md:pt-40">
                           <h1 className='text-white font-bold font-["Poppins",sans-serif]
               text-3xl sm:text-4xl md:text-5xl lg:text-6xl'>
                               Sed tortor in quisque morbi
