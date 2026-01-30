@@ -40,7 +40,7 @@ const Section5 = () => {
             newErrors.email = "Invalid email address";
         }
 
-        
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[@$!%*?&#])/;
         if (!passwordRegex.test(formData.password)) {
             newErrors.password = "1 capital & 1 symbol required";
         }
