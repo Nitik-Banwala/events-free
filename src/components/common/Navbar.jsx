@@ -17,9 +17,9 @@ const Navbar = () => {
     return (
         < >
             <nav className="fixed  top-0 left-0 w-full bg-black/40 backdrop-blur-[9px] p-4  z-50">
-                <div className="flex justify-between items-center  min-[500px]:px-6 px-0 max-w-330 mx-auto">
+                <div className="flex justify-between items-center  min-[500px]:px-6 px-0 max-w-330 mx-auto ">
                     <div className="flex items-center gap-2 sm:scale-100 scale-70">
-                        <img src="/png/logo.png" className="scale-80" alt="logo" />
+                        <img src="/png/logo.png" className="scale-80 " alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>
                         </p>
