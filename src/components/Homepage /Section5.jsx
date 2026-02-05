@@ -43,8 +43,9 @@ const Section5 = () => {
         const passwordRegex = /^(?=.*[A-Z])(?=.*[@$!%*?&#])/;
         if (!passwordRegex.test(formData.password)) {
             newErrors.password = "1 capital & 1 symbol required";
+
         }
-       
+
         if (formData.confirmPassword !== formData.password) {
             newErrors.confirmPassword = "Passwords do not match";
         }
@@ -92,54 +93,89 @@ const Section5 = () => {
 
                     <form onSubmit={handleSubmit}>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            <div className="flex flex-col">
                             <Input
+                                type="text"
                                 name="firstName"
                                 placeholder="First Name"
                                 value={formData.firstName}
                                 onChange={handleChange}
-                                error={errors.firstName}
-                                style="w-full border-[#00000066]"
+                                className={`w-full px-4 py-3 border rounded`}
                             />
+
+                            {errors.firstName && (
+                                <p className="text-red-500 text-sm mt-1">
+                                    {errors.firstName}
+                                </p>
+                                )}
+                            </div>
+                            <div className="flex flex-col">
                             <Input
+                                type="text"
                                 name="lastName"
                                 placeholder="Last Name"
                                 value={formData.lastName}
                                 onChange={handleChange}
-                                error={errors.lastName}
-                                style="w-full border-[#00000066]"
+                                className={`w-full px-4 py-3 border rounded`}
                             />
-                        </div>
 
+                            {errors.lastName && (
+                                <p className="text-red-500 text-sm mt-1">
+                                    {errors.lastName}
+                                </p>
+                                )}
+                            </div>
+                        </div>
+                        <div className="flex  mt-2 flex-col">
                         <Input
                             type="email"
                             name="email"
-                            placeholder="Email Address"
+                            placeholder="Email"
                             value={formData.email}
                             onChange={handleChange}
-                            error={errors.email}
-                            style="w-full border-[#00000066] mt-3 mb-3"
+                            className={`w-full px-4 py-3 border rounded`}
                         />
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {errors.email && (
+                            <p className="text-red-500 text-sm mt-1">
+                                {errors.email}
+                            </p>
+                        )}
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 mt-2 gap-2">
+                            <div className="flex flex-col">
                             <Input
                                 type="password"
                                 name="password"
                                 placeholder="Password"
                                 value={formData.password}
                                 onChange={handleChange}
-                                error={errors.password}
-                                style="w-full border-[#00000066]"
+                                className={`w-full  px-4 py-3 border rounded`}
                             />
+
+                            {errors.password && (
+                                <p className="text-red-500 text-sm mt-1">
+                                    {errors.password}
+                                </p>
+                                )}
+                            </div>
+                            <div className="flex flex-col">
                             <Input
                                 type="password"
                                 name="confirmPassword"
                                 placeholder="Confirm Password"
                                 value={formData.confirmPassword}
                                 onChange={handleChange}
-                                error={errors.confirmPassword}
-                                style="w-full border-[#00000066] "
+                                className={`w-full  px-4 py-3 border rounded`}
                             />
+
+                            {errors.confirmPassword && (
+                                <p className="text-red-500 text-sm mt-1">
+                                    {errors.confirmPassword}
+                                </p>
+                                )}
+                            </div>
                         </div>
 
                         <textarea
