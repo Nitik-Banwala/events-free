@@ -7,7 +7,7 @@ import Post from './Post'
 const Feed = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar  style={'bg-white'}/>
       <P3section1 />
       <div className='max-w-330 mx-auto'>
         <div className="flex flex-col mt-20 ">

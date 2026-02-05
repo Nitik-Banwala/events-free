@@ -10,7 +10,7 @@ import Comfooter from '../common/Comfooter'
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar style={'shadow-2xl bg-black/30'} />
       <Section1 />
       <Section2 />
       <Section3 />

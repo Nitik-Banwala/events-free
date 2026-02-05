@@ -5,7 +5,7 @@ import Comfooter from '../common/Comfooter'
 const Username = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar style={'bg-black/10'}/>
             <Hero />
             <Comfooter />
         </div>
