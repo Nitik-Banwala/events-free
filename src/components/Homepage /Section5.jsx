@@ -153,7 +153,6 @@ const Section5 = () => {
                                 onChange={handleChange}
                                 className={`w-full  px-4 py-3 border rounded`}
                             />
-
                             {errors.password && (
                                 <p className="text-red-500 text-sm mt-1">
                                     {errors.password}
@@ -169,7 +168,6 @@ const Section5 = () => {
                                 onChange={handleChange}
                                 className={`w-full  px-4 py-3 border rounded`}
                             />
-
                             {errors.confirmPassword && (
                                 <p className="text-red-500 text-sm mt-1">
                                     {errors.confirmPassword}
@@ -177,7 +175,6 @@ const Section5 = () => {
                                 )}
                             </div>
                         </div>
-
                         <textarea
                             name="about"
                             value={formData.about}
@@ -188,7 +185,6 @@ const Section5 = () => {
                             px-4 py-3 outline-none focus:border-[#2C49FE]
                             focus:ring-2 focus:ring-[#2C49FE]/20 resize-none"
                         />
-
                         <Button
                             text="Sign Up"
                             style="w-full mt-2 bg-[#2C49FE] hover:bg-[#1e38d8]

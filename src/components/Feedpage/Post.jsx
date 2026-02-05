@@ -84,12 +84,12 @@ export const Addpost = () => {
 
                 <div className="flex flex-col sm:flex-row gap-6 sm:gap-7 justify-left">
                     <div className="flex flex-col gap-6">
-                        <img src="./png/feedone.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
-                        <img src="./png/feedtwo.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
+                        <img src="./png/feedone.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 hover:scale-[1.1] transition-transform duration-200 " />
+                        <img src="./png/feedtwo.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75  hover:scale-[1.1] transition-transform duration-200" />
                     </div>
                     <div className="flex flex-col gap-6">
-                        <img src="./png/feedthree.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
-                        <img src="./png/feedfour.png" alt="" className="w-full lg:w-65 h-auto   2xl:w-75" />
+                        <img src="./png/feedthree.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 hover:scale-[1.1] transition-transform duration-200 " />
+                        <img src="./png/feedfour.png" alt="" className="w-full lg:w-65 h-auto   2xl:w-75 hover:scale-[1.1] transition-transform duration-200" />
                     </div>
                 </div>
             </div>
