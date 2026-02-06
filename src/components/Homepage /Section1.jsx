@@ -22,6 +22,7 @@ const Section1 = () => {
               text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2'>
                               scelerisque etiam eu.
                           </h1>
+                         
                           <p className='text-white mt-6 font-["Yantramanav",sans-serif]
               text-base sm:text-[20px] '>
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum <br /> suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec  <br />arcu. Nunc elit elit, malesuada id suscipit cursus,
@@ -29,9 +30,12 @@ const Section1 = () => {
                           <div className="flex flex-wrap items-center gap-6 mt-8">
                               <Button
                                   text="Get Started" style={'py-[11px] px-[28px] bg-[#2C49FE] rounded-[28px] font-["Poppins",sans-serif] text-white font-semibold hover:text-[#2C49FE] hover:bg-[white]'} />
-                              <p className='text-white font-["Poppins",sans-serif] text-lg cursor-pointer'>
+                              <a
+                                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                                  className=" text-white font-[ Poppins,sans-serif] text-lg  hover:underline cursor-pointer"
+                              >
                                   Learn more
-                              </p>
+                              </a>
                           </div>
                       </div>
                       <Footer/>

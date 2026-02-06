@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../common/Button'
+import { Link } from 'react-router'
 
 
 const P2section1 = () => {
@@ -14,8 +15,12 @@ const P2section1 = () => {
         />
 
         <div className="flex-1 mx-2 mt-2">
-          <h1 className="text-sm text-gray-500 mb-2">
-            Home <span className="mx-1">{">"}</span> Username
+          <h1 className="text-sm text-gray-500 mb-2 flex flex-row">
+            <Link to='/' >
+              <h1 className='cursor-pointer'>
+                Home
+              </h1>
+            </Link> <span className="mx-1">{">"}</span> Username
           </h1>
           <div className="flex flex-row max-[947px]:flex-col sm:items-center  gap-25 max-[1240px]:gap-2">
             <h1 className="text-5xl font-semibold">Jhone Doe</h1>

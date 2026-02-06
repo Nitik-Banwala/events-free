@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router";
 const Comfooter = () => {
     return (
         <footer className="bg-black text-white pt-16">
@@ -73,9 +73,14 @@ const Comfooter = () => {
                                 <img src="/png/footerimg3.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
                                 <img src="/png/footerimg4.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
                                 <img src="/png/footerimg5.png" alt="" className="hover:scale-[1.1] transition-transform duration-200" />
-                                <div className="bg-[#2D3CAE] flex items-center justify-center text-sm font-medium cursor-pointer">
+                                
+                                <div onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                                    className="bg-[#2D3CAE] flex items-center justify-center text-sm font-medium cursor-pointer"> 
+                                    <Link to='/Events'>  
                                     Show <br /> More
-                                </div>
+                                </Link>
+                                    </div>
+                                
                             </div>
                         </div>
 

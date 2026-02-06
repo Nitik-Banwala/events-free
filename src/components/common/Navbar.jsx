@@ -6,9 +6,7 @@ const Navbar = ({ style }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
-
     const current = location.pathname;
-
     const isDarkMode = current === "/Feed" || current === "/username";
     const isHomeOrEvents = current === "/" || current === "/events";
 
@@ -19,7 +17,6 @@ const Navbar = ({ style }) => {
         window.addEventListener("resize", onResize);
         return () => window.removeEventListener("resize", onResize);
     }, []);
-
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
@@ -39,14 +36,13 @@ const Navbar = ({ style }) => {
                 ? "text-black"
                 : "text-white"
         }`;
-
     return (
         <>
             <nav
                 className={`fixed top-0 left-0 w-full  backdrop-blur-[9px] p-4 z-50 ${navbarBgClass} ${style}`}>
                 <div className="flex justify-between items-center min-[500px]:px-6 px-0 max-w-330 mx-auto">
                     <div className="flex items-center gap-2 sm:scale-100 scale-70">
-                        <img src="/png/logo.png" className="scale-80 -ml-10" alt="logo" />
+                        <img src="/png/logo.png" className="scale-80 max-[1300px]:-ml-10 max-[500px]:-ml-15 " alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>
                         </p>
@@ -94,7 +90,6 @@ const Navbar = ({ style }) => {
                             {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
                         </NavLink>
                     ))}
-
                     <Button
                         text="Log Out" textColor="text-white" bgColor="bg-[#2C49FE]"  padding="px-6 py-2" rounded="rounded-[23px]" font="font-semibold" hover="hover:bg-white hover:text-[#2C49FE]" />
                 </div>

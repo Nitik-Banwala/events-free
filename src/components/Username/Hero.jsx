@@ -1,5 +1,6 @@
 import React from 'react'
 import Cards from './Cards'
+import { Link } from 'react-router'
 
 const Hero = () => {
   return (
@@ -7,8 +8,14 @@ const Hero = () => {
 
       <div className="h-96 bg-[url('/png/Usernamehero.png')] bg-cover bg-center">
         <div className="mx-auto max-w-7xl px-4 pt-56">
-          <h1 className="text-white">Home {">"} Events</h1>
-          <p className="text-white text-4xl sm:text-5xl md:text-[64px] -mt-2">
+          <h1 className="text-white flex flex-row gap-2  ">
+            <Link to='/' >
+              <h1 className='cursor-pointer'>
+                Home
+              </h1>
+            </Link>
+            {">"} Events</h1>
+          <p className="text-white text-4xl sm:text-5xl md:text-[64px] mt-2">
             Events
           </p>
         </div>

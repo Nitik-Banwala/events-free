@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Addfeedcomment } from "./Feedcomment";
+import { Link, useLocation } from 'react-router-dom'
 
 const Post = () => {
     return (
@@ -87,9 +88,32 @@ export const Addpost = () => {
                         <img src="./png/feedone.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 hover:scale-[1.1] transition-transform duration-200 " />
                         <img src="./png/feedtwo.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75  hover:scale-[1.1] transition-transform duration-200" />
                     </div>
-                    <div className="flex flex-col gap-6">
-                        <img src="./png/feedthree.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 hover:scale-[1.1] transition-transform duration-200 " />
-                        <img src="./png/feedfour.png" alt="" className="w-full lg:w-65 h-auto   2xl:w-75 hover:scale-[1.1] transition-transform duration-200" />
+                    <div className="relative flex flex-col gap-6">
+                        <img
+                            src="./png/feedthree.png"
+                            alt=""
+                            className="w-full lg:w-65 h-auto 2xl:w-75 hover:scale-[1.1] transition-transform duration-200"
+                        />
+
+                        <img
+                            src="./png/feedfour.png"
+                            alt=""
+                            className="w-full lg:w-65 h-auto 2xl:w-75 hover:scale-[1.1] transition-transform duration-200"
+                        />
+                        <Link to='/Events'>
+                        <div className="
+                                      absolute 
+                                      bottom-6 right-6
+                                      flex flex-col py-6 bg-white
+                                      rounded-[20px] shadow-2xl
+                                      hover:scale-[1.04] transition-transform duration-200
+                                      justify-center items-center
+                                      w-40 max-[1535px]:mb-6 max-[1237px]:mb-12 max-[1234px]:mb-18 max-[1228px]:mb-25 max-[1213px]:mb-33 max-[1209px]:mb-39 max-[1207px]:mb-45 max-[1024px]:mb-0
+                                  ">
+                            <h1 className="text-3xl font-semibold">+15</h1>
+                            <p className="text-[16px]">more</p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

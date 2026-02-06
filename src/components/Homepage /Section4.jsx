@@ -17,9 +17,12 @@ const Section4 = () => {
                         efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. <br />
                         Donec ut justo et leo congue lacinia vitae nec arcu.
                     </p>
-                    <button className="font-semibold text-sm tracking-wide hover:underline cursor-pointer">
-                        LEARN MORE
-                    </button>
+                    <a
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        className="font-semibold text-sm tracking-wide hover:underline cursor-pointer"
+                    >
+                        Learn more
+                    </a>
                 </div>
                 <div className=" flex flex-row gap-10 max-[568px]:flex-col  ">
                     <div className="bg-white max-w-85 cursor-pointer  overflow-hidden shadow-md hover:shadow-2xl transition duration-300">

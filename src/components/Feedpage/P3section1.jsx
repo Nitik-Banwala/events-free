@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const P3section1 = () => {
   return (
@@ -12,8 +13,12 @@ const P3section1 = () => {
           />
         </div>
         <div className="lg:ml-15">
-          <h1 className="text-sm text-gray-500 mb-3 text-center lg:text-left">
-            Home <span className="mx-1">{">"}</span> Username
+          <h1 className="text-sm text-gray-500 mb-3 text-center lg:text-left flex flex-row">
+            <Link to='/' >
+                          <h1 className='cursor-pointer'>
+                            Home
+                          </h1>
+                        </Link> <span className="mx-1">{">"}</span> Feed
           </h1>
           <div className="flex flex-col sm:flex-row sm:items-center mt-3 mb-5 gap-6 justify-center lg:justify-start">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center lg:text-left">
@@ -60,10 +65,12 @@ const P3section1 = () => {
                 </p>
               </div>
             </div>
+            <Link to='/Events'>
             <div className="flex flex-col py-8 px-10 bg-[#d3daff] rounded-[20px] shadow-2xl justify-center items-center w-full sm:w-40">
               <h1 className="text-3xl font-semibold">+15</h1>
               <p className="text-[16px]">more</p>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
